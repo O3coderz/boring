@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="veiwporrt" content="width=device-width, initial-scale=1.0">
+        <title>Open & closed button</title>
+        <link rel="stylesheet" href="simple.css">
+    </head>
+    <body>
+        <h1 id="open">Closed</h1>
+
+
+        <script>
+            var open = document.getElementById("open");
+            open.onclick = function() {
+                if(open.classList.contains("closed")){
+                    open.classList.remove("closed");
+                    open.innerHTML = "CLOSED";
+                }
+                else{
+                    open.classList.add("closed");
+                    open.innerHTML = "OPEN";
+                }
+            }  
+        </script>
+    </body>
+</html>
